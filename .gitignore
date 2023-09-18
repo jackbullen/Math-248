@@ -1,2 +1,4 @@
 .ipynb_checkpoints/
 .gitignore
+Course
+**/.DS_Store
