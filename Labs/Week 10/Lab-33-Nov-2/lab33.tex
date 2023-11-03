@@ -1,0 +1,435 @@
+
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\title{Math 248}
+\author{Jack Bullen}
+
+\begin{document}
+
+\maketitle
+\section{\href{https://patrickwalls.github.io/mathematicalpython/jupyter/notebook/}{jupyter/notebook/}}
+Jupyter Notebook is a web application for creating and sharing documents that contain live code, equations, visualizations and explanatory text.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/jupyter/markdown/}{jupyter/markdown/}}
+Markdown is a simple text-to-HTML markup language written in plain text. Jupyter notebook recognizes markdown and renders markdown code as HTML. See Markdown (by John Gruber) and GitHub Markdown Help for more information.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/jupyter/latex/}{jupyter/latex/}}
+LaTeX is a programming environment for producing scientific documents. Jupyter notebook recognizes LaTeX code written in markdown cells and renders the mathematical symbols in the browser using the MathJax JavaScript library.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/python/numbers/}{python/numbers/}}
+The main numeric types in Python are integers, floating point numbers (or floats) and complex numbers. The syntax for arithmetic operators are: addition +, subtraction -, multiplication *, division / and exponentiation **.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/python/variables/}{python/variables/}}
+Just like the familiar variables $x$ and $y$ in mathematics, we use variables in programming to easily manipulate values. The assignment operator = assigns values to variables in Python. Choose descriptive variable names and avoid special Python reserved words.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/python/sequences/}{python/sequences/}}
+The main sequence types in Python are lists, tuples and range objects. The main differences between these sequence objects are:
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/python/functions/}{python/functions/}}
+A function takes input parameters, executes a series of computations with those inputs and then returns a final output value. Functions give us an efficient way to save and reuse a block of code over and over again with different input values. There are built-in functions in the standard Python library and we can define our own functions.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/python/logic/}{python/logic/}}
+The boolean type has only two values: True and False. Let's assign a boolean value to a variable and verify the type using the built-in function type():
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/python/loops/}{python/loops/}}
+A for loop allows us to execute a block of code multiple times with some parameters updated each time through the loop. A for loop begins with the for statement:
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/scipy/numpy/}{scipy/numpy/}}
+NumPy is the core Python package for numerical computing. The main features of NumPy are:
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/scipy/matplotlib/}{scipy/matplotlib/}}
+Matplotlib is a Python package for 2D plotting and the matplotlib.pyplot sub-module contains many plotting functions to create various kinds of plots. Let's get started by importing matplotlib.pyplot.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/root-finding/root-finding/}{root-finding/root-finding/}}
+Root finding refers to the general problem of searching for a solution of an equation $F(x)=0$ for some function $F(x)$. This is a very general problem and it comes up a lot in mathematics! For example, if we want to optimize a function $f(x)$ then we need to find critical points and therefore solve the equation $f'(x)=0$.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/root-finding/bisection/}{root-finding/bisection/}}
+The simplest root finding algorithm is the bisection method. The algorithm applies to any continuous function $f(x)$ on an interval $[a,b]$ where the value of the function $f(x)$ changes sign from $a$ to $b$. The idea is simple: divide the interval in two, a solution must exist within one subinterval, select the subinterval where the sign of $f(x)$ changes and repeat.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/root-finding/secant/}{root-finding/secant/}}
+The secant method is very similar to the bisection method except instead of dividing each interval by choosing the midpoint the secant method divides each interval by the secant line connecting the endpoints. The secant method always converges to a root of $f(x)=0$ provided that $f(x)$ is continuous on $[a,b]$ and $f(a)f(b)<0$.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/root-finding/newton/}{root-finding/newton/}}
+Newton's method is a root finding method that uses linear approximation. In particular, we guess a solution $x_0$ of the equation $f(x)=0$, compute the linear approximation of $f(x)$ at $x_0$ and then find the $x$-intercept of the linear approximation.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/integration/integrals/}{integration/integrals/}}
+The definite integral of a function $f(x)$ over an interval $[a,b]$ is the limit
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/integration/riemann-sums/}{integration/riemann-sums/}}
+A Riemann sum of a function $f(x)$ over a partition
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/integration/trapezoid-rule/}{integration/trapezoid-rule/}}
+The definite integral of $f(x)$ is equal to the (net) area under the curve $y=f(x)$ over the interval $[a,b]$. Riemann sums approximate definite integrals by using sums of rectangles to approximate the area.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/integration/simpsons-rule/}{integration/simpsons-rule/}}
+Simpson's rule uses a quadratic polynomial on each subinterval of a partition to approximate the function $f(x)$ and to compute the definite integral. This is an improvement over the trapezoid rule which approximates $f(x)$ by a straight line on each subinterval of a partition.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/differentiation/differentiation/}{differentiation/differentiation/}}
+The derivative of a function $f(x)$ at $x=a$ is the limit
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/differential-equations/first-order/}{differential-equations/first-order/}}
+A differential equation is an equation involving an unknown function $y(t)$ and its derivatives $y',y'',\dots$, and the order of a differential equation is the highest order derivative of $y(t)$ appearing in the equation. There are methods to solve first order equations which are separable and/or linear however most differential equations cannot be solved explicitly with elementary functions. We can always use graphical methods and numerical methods to approximate solutions of any first order differential equation.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/differential-equations/numerical-methods/}{differential-equations/numerical-methods/}}
+Most differential equations cannot be solved explicitly using elementary functions however we can always approximate solutions using numerical methods. The order of a numerical method describes how much the error decreases as the step size decreases. Higher order methods are more accurate however they require more computations to implement. Euler's method is the simplest method however the Runge-Kutta method (RK4) is the most commonly used in practice.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/differential-equations/systems/}{differential-equations/systems/}}
+A system of differential equations is a collection of equations involving unknown functions $u_0,\dots,u_{N-1}$ and their derivatives. The dimension of a system is the number $N$ of unknown functions. The order of the system is the highest order derivative appearing in the collection of equations. Every system of differential equations is equivalent to a first order system in a higher dimension.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/linear-algebra/linear-algebra-scipy/}{linear-algebra/linear-algebra-scipy/}}
+The main Python package for linear algebra is the SciPy subpackage scipy.linalg which builds on NumPy. Let's import both packages:
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/linear-algebra/solving-linear-systems/}{linear-algebra/solving-linear-systems/}}
+A linear system of equations is a collection of linear equations
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/linear-algebra/eigenvalues-eigenvectors/}{linear-algebra/eigenvalues-eigenvectors/}}
+Let $A$ be a square matrix. A non-zero vector $\mathbf{v}$ is an eigenvector for $A$ with eigenvalue $\lambda$ if
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/linear-algebra/applications/}{linear-algebra/applications/}}
+Polynomial interpolation finds the unique polynomial of degree $n$ which passes through $n+1$ points in the $xy$-plane. For example, two points in the $xy$-plane determine a line and three points determine a parabola.
+\vspace{1cm}
+\section{\href{https://patrickwalls.github.io/mathematicalpython/problems/problems/}{problems/problems/}}
+Write a function called newton which takes input parameters $f$, $x_0$, $h$ (with default value 0.001), tolerance (with default value 0.001) and max iter (with default value 100). The function implements Newton's method to approximate a solution of $f(x) = 0$. In other words, compute the values of the recursive sequence starting at $x_0$ and defined by
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{\left(-1\right)^{k} E_{2*k} z^{2 k}}{\left(2 k\right)!}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{E_{2*k} z^{2 k}}{\left(2 k\right)!}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\left(-1\right)^{k - 1} z^{2 k}}{\left(2 k\right)!}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\left(-1\right)^{k - 1} z^{2 k}}{2 \left(2 k\right)!}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{z^{2 k + 1} \left(2 k\right)!}{2^{2 k} \left(2 k + 1\right) k!^{2}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{\left(-1\right)^{k} z^{2 k + 1} \left(2 k\right)!}{2^{2 k} \left(2 k + 1\right) k!^{2}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{\left(-1\right)^{k} z^{2 k + 1}}{2 k + 1}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{z^{2 k + 1}}{2 k + 1}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\left(-1\right)^{k - 1} z^{2 k} \left(2 k\right)!}{2^{2 k + 1} k^{2}{\left(k! \right)}} + \log{\left(2 \right)}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} z^{k} \frac{\left(4 k\right)!}{2^{4 k} \sqrt{2} \left(2 k\right)! \left(2 k + 1\right)!} = \sqrt{\frac{1 - \sqrt{1 - z}}{z}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} z^{2 k + 2} \frac{2^{2 k} k!^{2}}{\left(k + 1\right) \left(2 k + 1\right)!}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{n=0}^{\infty} z^{2 n} \frac{\prod_{k=0}^{n - 1} \left(\alpha^{2} + 4 k^{2}\right)}{\left(2 n\right)!}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\left(z + 1\right)^{\alpha}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} z^{k} choose k \left(\left(\alpha + k\right) - 1\right) = \frac{1}{\left(1 - z\right)^{\alpha}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{z^{k} 2 k choose k}{k + 1} = \frac{1 - \sqrt{1 - 4 z}}{2 z}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} z^{k} 2 k choose k = \frac{1}{\sqrt{1 - 4 z}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} z^{k} \left(\alpha choose k + 2 k\right) = \frac{\frac{1}{2 z} \left(1 - \sqrt{1 - 4 z}\right)}{\sqrt{1 - 4 z}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+H{\left(x \right)}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} H_{k} z^{k} = \frac{\left(-1\right) \log{\left(1 - z \right)}}{1 - z}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} z^{k + 1} \frac{H_{k}}{k + 1} = \frac{\log{\left(1 - z \right)}^{2}}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} z^{2 k + 1} \frac{\left(-1\right)^{k - 1} H_{2*k}}{2 k + 1} = \frac{\log{\left(z^{2} + 1 \right)} \operatorname{atan}{\left(z \right)}}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{\substack{0 \leq k \leq 2 n\\0 \leq n \leq \infty}} \frac{\left(-1\right)^{k}}{2 k + 1} \frac{z^{4 n + 2}}{4 n + 2} = \frac{\operatorname{atan}{\left(z \right)}}{4}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{n=0}^{\infty} \frac{x^{2}}{n^{2} \left(n + x\right)} = x \frac{\pi^{2}}{6} - H{\left(x \right)}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{n} n choose k = 2^{n}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{n} \left(-1\right)^{k} n choose k = 0
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{n} k choose m = \left(1 choose m + n\right) + 1
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{n} \left(- 1 choose k + \left(k + m\right)\right) = m choose n + n
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{n} \alpha choose k \left(\beta choose n - k\right) = \alpha + \beta choose n
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\sin{\left(k \theta \right)}}{k} = \frac{\pi - \theta}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\left(-1\right)^{k - 1}}{k} \cos{\left(k \theta \right)} = \frac{\log{\left(2 \cos{\left(\theta \right)} + 2 \right)}}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\left(-1\right)^{k - 1}}{k} \sin{\left(k \theta \right)} = \frac{\theta}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\cos{\left(2 k \theta \right)}}{2 k} = - \frac{\log{\left(2 \sin{\left(\theta \right)} \right)}}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\sin{\left(2 k \theta \right)}}{2 k} = \frac{\pi - 2 \theta}{4}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{\cos{\left(\theta \left(2 k + 1\right) \right)}}{2 k + 1} = \frac{\log{\left(\cot{\left(\frac{\theta}{2} \right)} \right)}}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{\sin{\left(\theta \left(2 k + 1\right) \right)}}{2 k + 1} = \frac{\pi}{4}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\sin{\left(2 \pi k x \right)}}{k}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+B_{n}{\left(x \right)} = - \frac{n!}{2^{n - 1} \pi^{n}} \sum_{k=1}^{\infty} \frac{1}{k^{n}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{n - 1} \sin{\left(\frac{k \pi}{n} \right)}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{n - 1} \sin{\left(\frac{2 k \pi}{n} \right)} = 0
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{n - 1} \csc^{2}{\left(\theta + \frac{k \pi}{n} \right)} = n^{2} \csc^{2}{\left(n \theta \right)}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{n - 1} \csc^{2}{\left(\frac{k \pi}{n} \right)} = \frac{n^{2} - 1}{3}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{n - 1} \csc^{4}{\left(\frac{k \pi}{n} \right)} = \frac{\left(n^{4} + 10 n^{2}\right) - 11}{45}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{n=a + 1}^{\infty} \frac{a}{- a^{2} + n^{2}} = \frac{H_{2*a}}{2}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{n=0}^{\infty} \frac{1}{a^{2} + n^{2}} = \frac{a \pi \coth{\left(a \pi \right)} + 1}{2 a^{2}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+displaystyle \sum_{n=0}^{\infty} \frac{1}{4 a^{4} + n^{4}} = \frac{1}{8 a^{4}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+n
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+displaystyle \sum_{n=-\infty}^{\infty} e^{- n^{2} \pi} = \frac{\sqrt[4]{\pi}}{\Gamma{\left(\frac{3}{4} \right)}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{n=-\infty}^{\infty} e^{- n^{2} \pi} = \frac{\sqrt[4]{\pi}}{\Gamma{\left(\frac{3}{4} \right)}}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\left(-1\right)^{k + 1}}{k} = cdots + \left(- \frac{1}{4} + \left(\frac{1}{3} + \left(- \frac{1}{2} + 1^{-1}\right)\right)\right)
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=0}^{\infty} \frac{1}{k!} = c + \left(\frac{1}{4!} + \left(\frac{1}{3!} + \left(\frac{1}{2!} + \left(\frac{1}{0!} + \frac{1}{1!}\right)\right)\right)\right)
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{\left(-1\right)^{k}}{k^{2} + 1} = cdots + \left(\left(\left(- \frac{1}{2} + \frac{1}{5}\right) - \frac{1}{10}\right) + \frac{1}{17}\right)
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\frac{4}{8 \cdot 6 \cdot 7} - \left(-3 - \frac{1}{6} + \frac{1}{30}\right)
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{1}{T_{k}} = c + \left(\frac{1}{15} + \left(\frac{1}{10} + \left(\frac{1}{6} + \left(\frac{1}{3} + 1^{-1}\right)\right)\right)\right)
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+T_{n}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\sum_{k=1}^{\infty} \frac{1}{T e_{k}} = \frac{1}{35} + \left(\frac{1}{20} + \left(\frac{1}{10} + \left(\frac{1}{4} + 1^{-1}\right)\right)\right)
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+T e_{n}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\text{False}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+f{\left(x \right)} = \frac{\pi}{4}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\frac{\pi}{4}
+\end{align*}
+\vspace{1cm}
+\subsection{}
+\begin{align*}
+\frac{\pi}{4}
+\end{align*}
+\vspace{1cm}
+
+\end{document}
