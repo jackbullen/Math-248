@@ -1,0 +1,36 @@
+csv
+---
+
+pd.read_csv('file_path.csv')
+
+
+solving algebraic equations
+---------------------------
+
+np.linalg.solve(A, b)
+
+sympy (symbolic calculations)
+-----------------------------
+
+f is a sympy expressions
+
+sp.solve(f, x)
+sp.solve(f, [x0, x1, x2])
+
+sp.diff(f, x)
+sp.diff(f, x, n)
+
+sp.integrate(f, x)
+sp.integrate(f, (x, a, b))
+
+sp.lambdify(x , f)
+
+
+numerical integration
+
+quad(f)
+
+plotting
+--------
+
+plt.plot(x, y)
