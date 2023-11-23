@@ -3,4 +3,5 @@
 Course
 **/.DS_Store
 **/__pycache__/
+*.deg
 ```
